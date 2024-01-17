@@ -1,39 +1,40 @@
-  <footer class="o-section c-page-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+  <div class="c-pre-footer">
     <div class="o-wrapper-wide">
-    <div class="grid-x">
-        <div class="cell  medium-3">
-          <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
-            <?php dynamic_sidebar( 'footer-1' ); ?>
-          <?php endif; ?>
-        </div>
-        <div class="cell  medium-3">
-        <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
-          <?php dynamic_sidebar( 'footer-2' ); ?>
-        <?php endif; ?>
-        </div>
-        <div class="cell  medium-3">
-        <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
-          <?php dynamic_sidebar( 'footer-3' ); ?>
-        <?php endif; ?>
-        </div>
-        <div class="cell  medium-3">
-        <?php if ( is_active_sidebar( 'footer-4' ) ) : ?>
-          <?php dynamic_sidebar( 'footer-4' ); ?>
-        <?php endif; ?>
-        </div>
-      </div>
-      <!-- /.c-footer-widgets -->
-      <div class="c-logo-copy-wrap  u-align-side-edges">
-        <div>
-          Logo or Something here....
-        </div>
-        <div class="">
-          &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
-        </div>
-      </div>
-      <!-- /.c-logo-copy-wrap -->
+    <p>Medical | Counselling | Dietitian | Pelvic Floor Physiotherapy | Physiotherapy | Massage Therapy </p>
+<p class="c-pre-footer-tag">Healthcare for all women, all trans, and all non-binary individuals.</p>
     </div>
-    <!-- /.o-wrapper-wide -->
+  </div>
+  <footer class="o-section c-page-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+    <div class="c-footer-main">
+      <div class="o-wrapper-wide">
+      <div class="grid-x">
+          <div class="cell  medium-4">
+            <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+              <?php dynamic_sidebar( 'footer-1' ); ?>
+            <?php endif; ?>
+          </div>
+          <div class="cell  medium-5">
+          <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
+            <?php dynamic_sidebar( 'footer-2' ); ?>
+          <?php endif; ?>
+          </div>
+          <div class="cell  medium-3">
+          <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
+            <?php dynamic_sidebar( 'footer-3' ); ?>
+          <?php endif; ?>
+          </div>
+     
+        </div>
+        <!-- /.c-footer-widgets -->
+
+      </div>
+      <!-- /.o-wrapper-wide -->
+    </div>
+    <div class="c-footer-lower">
+      <div class="o-wrapper-wide">
+      &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
+      </div>
+    </div>
   </footer>
   <!-- /.c-page-footer -->
 

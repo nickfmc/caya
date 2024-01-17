@@ -38,11 +38,12 @@
     white-space: nowrap;
   }
   .c-main-menu > li > a {
-    color: #555555;
+    color: $color-brown;
     display: block;
-    font-size: 1rem;
+    font-size: 15px;
+    text-transform: uppercase;
     margin: 0;
-    padding: 41px 1rem;
+    padding: 34px 1rem;
     &:first-of-type > a {
       padding-left: 0;
     }
@@ -51,14 +52,22 @@
     }
   }
   .c-main-menu > li > a:hover {
-    color: #222222;
+    color: $color-green-dark;
+  }
+  .c-main-menu > li.c-menu-button > a {
+    background-color: $color-brown;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    top: 22px;
+    border-radius: 3px;
   }
   .c-main-menu > .current-menu-item > a,
   .c-main-menu > .current-page-ancestor > a,
   .c-main-menu > .current_page_item > a,
   .c-main-menu > .current_page_parent > a,
   .c-main-menu > .current_page_ancestor > a {
-    color: #222222
+    color: $color-green-dark;
   }
 }
 // END menu top level
@@ -74,13 +83,15 @@
     visibility: visible;
   }
   .c-main-menu ul {
-    background-color: #aaa;
+    background-color: $color-offwhite-green;
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 100%;
     min-width: 180px;
+    border-radius: 30px  0 30px 0;
     margin: 0;
-    padding: 0;
+    padding: 20px 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
     opacity: 0;
     visibility: hidden;
     transition: all 200ms linear;
@@ -102,6 +113,7 @@
     padding: 0.5rem 1rem;
     width: 100%;
     display: block;
+    color: $color-green-dark;
     transition: $transition-ease;
   }
   .c-main-menu ul li a:hover,

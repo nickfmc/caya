@@ -5,12 +5,12 @@
  */
 
 // register ###REPLACE_ME### custom post type
-add_action( 'init', 'gdt_CPTNAME_reg' );
+add_action( 'init', 'gdt_teammember_reg' );
 
 // create a custom post type and name it
-function gdt_CPTNAME_reg() {
-  $singular = 'Sample';
-  $plural = 'Samples';
+function gdt_teammember_reg() {
+  $singular = 'Team Member';
+  $plural = 'Team Members';
   $labels = array(
     'name'                 => "$plural",
     'singular_name'        => "$singular",
@@ -37,14 +37,14 @@ function gdt_CPTNAME_reg() {
     'show_in_menu'         => true,
     'query_var'            => true,
     'menu_position'        => 21,
-    'menu_icon'            => 'dashicons-book',
+    'menu_icon'            => 'dashicons-groups',
     'rewrite'              => false, // or: array( 'slug' => 'custom_type_url/list', 'with_front' => false ),
     'capability_type'      => 'post',
     'has_archive'          => false, // true or use custom slug: 'custom_type_url/past' */
     'hierarchical'         => false,
     'supports'             => array( 'title', 'editor', 'author', 'thumbnail', 'revisions' )
   );
-  register_post_type( 'postname_type', $args );
+  register_post_type( 'team_type', $args );
 }
 
 

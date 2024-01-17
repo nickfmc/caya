@@ -3,3 +3,19 @@
    ========================================================================== */
 
 // ideally this file is forever blank. likely it won't be. :(
+.gb-block-image {
+   img {
+      display: inline-block;
+   }
+}
+
+.gb-block-image + p {
+   margin-top: 30px;
+}
+p + h2 {
+   margin-top: 50px;
+}
+
+.gb-grid-wrapper + p {
+   margin-top: 30px;
+}

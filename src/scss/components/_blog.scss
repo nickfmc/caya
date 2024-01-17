@@ -1,0 +1,58 @@
+.single-post  {
+    h2 {
+        margin-top: 40px;
+    }
+}
+
+.c-blog-single-inner {
+    border: 1px solid #ccc;
+    padding: 45px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.c-single-premeta {
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: $color-black;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:6px;
+        a {
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:6px;
+
+        }
+    }
+  }
+
+  .c-social-share {
+    margin-top: 80px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .a2a_kit {
+
+   
+  
+   a {
+    color: $color-black; 
+    margin-right: 20px;
+    svg {
+        
+        
+        fill: $color-black;
+    }
+   }
+  }

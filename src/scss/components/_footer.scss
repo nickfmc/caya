@@ -1,9 +1,59 @@
 /* ==========================================================================
    FOOTER
    ========================================================================== */
+.c-pre-footer {
+  margin-top: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: $color-brown;
+text-align: center;
+color: #fff;
+font-family: $font-secondary;
+p {
+  margin-bottom: 0;
+}
+}
+
+.c-pre-footer-tag {
+  font-size: clamped(23px, 30px);
+}
 
 .c-page-footer {
-  background-color: #cacaca;
+  h4 {
+    font-size: clamped(20px, 24px);
+    position: relative;
+    padding-bottom: 20px;
+    &::after {
+content: "";
+position: absolute;
+bottom: 0px;
+left: 0;
+width: 50px;
+height: 2px;
+
+background-color: $color-green-dark;
+    }
+  }
+  .cell {
+    padding: 0 25px;
+  }
+
+}
+
+.c-footer-main {
+  background-color: #fff;
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.c-footer-lower {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: $color-offwhite-green;
+  color: $color-black;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

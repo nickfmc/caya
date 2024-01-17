@@ -10,33 +10,38 @@
 			"palette": [
 				{
                     "name": "Black",
-					"slug": "black",
-					"color": "#000000"
+					"slug": "theme-black",
+					"color": "#323232"
 				},
 				{
-					"slug": "white",
+					"slug": "theme-white",
 					"color": "#FFFFFF",
 					"name": "White"
 				},
                 {
 					"slug": "dark-grey",
-					"color": "#121212",
-					"name": "Dark grey"
+					"color": "#646464",
+					"name": "grey"
 				},
 				{
-					"slug": "medium-grey",
-					"color": "#383838",
-					"name": "Medium grey"
+					"slug": "green",
+					"color": "#79857d",
+					"name": "Green"
 				},
 				{
-					"slug": "cyan",
-					"color": "#00838f",
-					"name": "Cyan"
+					"slug": "brown",
+					"color": "#292521",
+					"name": "Brown"
 				},
 				{
-					"slug": "light-cyan",
-					"color": "#4fb3bf",
-					"name": "Light cyan" 
+					"slug": "offwhite-one",
+					"color": "#f4f0ec",
+					"name": "Offwhite one"
+				},
+				{
+					"slug": "offwhite-two",
+					"color": "#f6ebe4",
+					"name": "Offwhite two" 
 				}
 			]
 		
@@ -59,7 +64,7 @@
 			},
 			{
 				"slug": "large",
-				"size": "1.5rem",
+				"size": "1.1rem",
 				"name": "large"
 			}
 		]

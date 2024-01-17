@@ -12,7 +12,7 @@ $bp-xlarge: 1320px;
 // Match these to your theme.json layout settings.
 // Also check the setting of any block plugins you use to match these.
 $wrapper-width-wide: 1180px; // Gutenberg Wide wrapper
-$wrapper-width-base: 920px;  // Gutenberg Standard wrapper
+$wrapper-width-base: 1020px;  // Gutenberg Standard wrapper
 // Match these to your theme.json layout settings.
 
 
@@ -24,21 +24,26 @@ $page-header-height: 100px;
 // ++ COLOURS +++++++++++++++++++++++++++++++++
 $color-red-400:         #A82313;
 
-$color-green-400:       #529564;
+$color-green:       #bfcac1;
+$color-green-dark: #79857d;
+$color-offwhite-green: #f4f0ec;
+$color-offwhite-red:        #f6ebe4;
+$color-brown: #292521;
+$color-pink: #deb7b1;
 
 $color-gray-100:        #EAEAEA;
-$color-gray-400:        #ACACAC;
+$color-gray:        #646464;
 $color-gray-700:        #323232;
 
-$color-black:           #000;
+$color-black:           #323232;
 $color-white:           #FFF;
 
 // assign colours to variables
 $alert-color:       $color-red-400;
 $text-color:        $color-black;
-$link-color:        $color-green-400;
+$link-color:        $color-green-dark;
 $link-hover:        $color-gray-700;
-$border-color:      $color-gray-400;
+$border-color:      $color-gray;
 
 
 // ++ MISC VARS ++++++++++++++++++++++++++++++++++
@@ -50,13 +55,13 @@ $logo-size: 300px;
 
 // ++ TYPOGRAPHY +++++++++++++++++++++++++++++++++
 // Fonts
-$font-primary: 'Arial', sans-serif;
-$font-secondary: 'Times New Roman', serif;
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Playfair Display', serif; 
 
 // Spacing
-$line-height-normal: 1.50;
+$line-height-normal: 1.60;
 $line-height-tight: 1.10;
-$line-height-loose: 1.70;
+$line-height-loose: 1.80;
 $letter-spacing: 0.125em; //2px
 
 // Glyphs
