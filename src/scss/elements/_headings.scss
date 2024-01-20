@@ -6,7 +6,7 @@ h1, .h1-style, h2, .h2-style, h3, .h3-style, h4, .h4-style, h5, .h5-style, h6, .
   color: $text-color;
   font-family: $font-secondary;
   font-weight: 400;
-  line-height: $line-height-tight;
+  line-height: 1.4;
   margin: 0 0 1rem 0;
 }
 h1 a, .h1-style a, h2 a, .h2-style a, h3 a, .h3-style a, h4 a, .h4-style a, h5 a, .h5-style a, h6 a, .h6-style a {
@@ -16,13 +16,21 @@ h1 a, .h1-style a, h2 a, .h2-style a, h3 a, .h3-style a, h4 a, .h4-style a, h5 a
 h1, .h1-style {
   font-size: clamped(30px, 45px);
   margin-bottom: 40px;
+  sub {
+    bottom: 13px;
+  }
 }
 h2, .h2-style {
   font-size: 3rem;
   font-size: clamped(24px, 28px); 
+ 
 }
 h3, .h3-style {
-  font-size: 2.5rem;
+  font-size: clamped(22px, 24px);
+  line-height: 1.4;
+  font-family: $font-primary; 
+  font-weight: 300;
+
 }
 h4, .h4-style {
   font-size: 2rem;

@@ -1,6 +1,10 @@
 /* ==========================================================================
    MISC UTILITIES
    ========================================================================== */
+.u-bump-right {
+position: relative;
+right: -50px;
+}
 
 .u-absolute {
   position: absolute;
@@ -23,6 +27,12 @@
 
 .u-text-center {
   text-align: center;
+}
+
+.u-quote-mark {
+  position: absolute;
+  top: 56px;
+  left: -43px;
 }
 
 

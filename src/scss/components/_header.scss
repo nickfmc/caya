@@ -3,19 +3,10 @@
    ========================================================================== */
 .c-page-header {
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  z-index: 100;
+  position: relative;
 }
-.c-page-header-top {
-  padding-left: 25px;
-  padding-right: 25px; 
-  background-color: $color-pink;
-  color: #fff;
-  padding: 8px;
-  font-size: 14px;
-  text-align: right;
-  a {
-    color: $color-brown;
-  }
-}
+
 .c-page-header-lower {
   background: #fff; 
  
@@ -31,19 +22,19 @@
 
 .c-social-links {
   display: inline-flex;
-  margin-left: 20px;
+  margin-left: 15px;
   a {
     // background-color: $color-pink;
     border-radius: 3px;
     padding: 3px;
-    width: 20px;
-    height: 20px;
+    // width: 20px;
+    // height: 20px;
     margin-left: 6px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     svg {
-      fill: $color-brown;
+      fill: $color-gray;
     };
   }
 }

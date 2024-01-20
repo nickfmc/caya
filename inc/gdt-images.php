@@ -7,7 +7,7 @@ IMAGES & CROPPING - #images
 /************* IMAGE SIZE OPTIONS *************/
 
 // Default thumb size
-set_post_thumbnail_size( 150, 150, true );
+set_post_thumbnail_size( 250, 250, true );
 
 // Image crop sizes
 add_image_size( 'crop-1200-500', 1200, 500, true );

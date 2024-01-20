@@ -19,3 +19,72 @@ p + h2 {
 .gb-grid-wrapper + p {
    margin-top: 30px;
 }
+
+.c-icon-circle {
+   span {
+      background-color: $color-green-dark;
+      border-radius: 50%;
+      margin: auto;
+      padding: 10px;
+      color: $color-offwhite-green;
+   }
+}
+
+.c-icon-circle-two {
+   span {
+      background-color: $color-green-dark;
+      border-radius: 50%;
+      margin: auto;
+      padding: 10px;
+      color: $color-offwhite-red;
+   }
+}
+
+.gb-tabs__button {
+   text-align: center;
+   h3 {
+      font-size: 18px;
+   }
+   .gb-icon {
+      margin: auto;
+   color: $color-green-dark;
+
+   }
+}
+
+.gb-tabs__button.gb-block-is-current  {
+   text-align: center;
+   color: $color-offwhite-green;
+   h3 {
+      color: $color-offwhite-green;
+      font-size: 18px;
+   }
+
+}
+
+.c-staff-card {
+   margin-bottom: 34px;
+   text-align: center;
+   .piotnetgrid-image__tag {
+      width: 250px !important;
+   }
+   img {
+      margin: 0 auto 20px auto;
+      object-fit: cover;
+      object-position: top;
+   }
+   h5 {
+      margin-bottom: 0;
+   }
+   .piotnetgrid-button {
+      margin: 0 auto;
+   }
+
+   .piotnetgrid-image {
+      margin-bottom: 20px;
+   }
+}
+
+.piotnetgrid-facet__field-subgroup--buttons {
+   justify-content: center;
+}

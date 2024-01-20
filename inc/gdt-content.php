@@ -20,7 +20,7 @@
 // custom excerpt length **************
 function gdt_custom_excerpt_length($length)
 {
-  return 66;
+  return 30;
 }
 add_filter('excerpt_length', 'gdt_custom_excerpt_length', 999);
 
@@ -30,62 +30,52 @@ function gdt_excerpt_more($more)
 {
   global $post;
   // edit here if you like
-  return '...  <a class="excerpt-read-more" href="' . get_permalink($post->ID) . '" title="Read ' . get_the_title($post->ID) . '"><span>Read more &raquo;</span></a>';
+  return '...  ';
 }
 
 
 // ********** FlexDev custom WP excerpt length *********************
 // TIP: excerpt value must be less than gdt_custom_excerpt_length
 // USAGE: echo gdt_excerpt(25);
-function gdt_excerpt($charLimit)
-{
-  $excerptString = explode(' ', get_the_excerpt(), $charLimit);
-  if (count($excerptString) >= $charLimit) {
-    array_pop($excerptString);
-    $excerptString = implode(" ", $excerptString) . '[...]';
-  } else {
-    $excerptString = implode(" ", $excerptString);
-  }
-  $excerptString = preg_replace('`\[[^\]]*\]`', '', $excerptString);
-  return $excerptString;
-}
+// function gdt_excerpt($charLimit)
+// {
+//   $excerptString = explode(' ', get_the_excerpt(), $charLimit);
+//   if (count($excerptString) >= $charLimit) {
+//     array_pop($excerptString);
+//     $excerptString = implode(" ", $excerptString) . '[...]';
+//   } else {
+//     $excerptString = implode(" ", $excerptString);
+//   }
+//   $excerptString = preg_replace('`\[[^\]]*\]`', '', $excerptString);
+//   return $excerptString;
+// }
 
 
 
 // ********** FlexDev custom CONTENT excerpt length ********************
 // USAGE: echo gdt_content_excerpt(25);
-function gdt_content_excerpt( $charLimit )
-{
-  $excerpt = strip_tags( get_the_content() );
-  $charLimit++;
-  $excerpt = preg_replace('/\[[^\]]+\]/', '', $excerpt);
-  if (strlen($excerpt) > $charLimit) {
-    $subex = substr($excerpt, 0, $charLimit - 5);
-    $exwords = explode(" ", $subex);
-    $excut = -(strlen($exwords[count($exwords) - 1]));
-    if ($excut < 0) {
-      $excerptString = substr($subex, 0, $excut);
-    } else {
-      $excerptString = $subex;
-    }
-    $excerptString .= "[...]";
-  } else {
-    $excerptString = $excerpt;
-  }
-  return $excerptString;
-}
+// function gdt_content_excerpt( $charLimit )
+// {
+//   $excerpt = strip_tags( get_the_content() );
+//   $charLimit++;
+//   $excerpt = preg_replace('/\[[^\]]+\]/', '', $excerpt);
+//   if (strlen($excerpt) > $charLimit) {
+//     $subex = substr($excerpt, 0, $charLimit - 5);
+//     $exwords = explode(" ", $subex);
+//     $excut = -(strlen($exwords[count($exwords) - 1]));
+//     if ($excut < 0) {
+//       $excerptString = substr($subex, 0, $excut);
+//     } else {
+//       $excerptString = $subex;
+//     }
+//     $excerptString .= "[...]";
+//   } else {
+//     $excerptString = $excerpt;
+//   }
+//   return $excerptString;
+// }
 
 
-// ************ CUSTOM TITLE LENGTH *********************
-/* usage: <?php echo title_crop(55); ?> */
-function title_crop($count)
-{
-  $title = get_the_title();
-  if (strlen($title) > $count) {
-    $title = substr($title, 0, $count) . '...';
-  }
-  return $title;
-}
 
 
 

@@ -18,6 +18,7 @@
         </header>
         <!-- /article-header -->
         <article <?php post_class(); ?> role="article">
+        <h1><?php the_title();?></h1>
           <?php the_content(); ?>
 
           <!-- AddToAny BEGIN -->

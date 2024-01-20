@@ -56,3 +56,49 @@
     }
    }
   }
+
+  .c-blog-card {
+    display: flex !important;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    justify-content: center;
+    min-height: 257px;
+    > div {
+        height: auto !important;
+        width: 100%;
+    }
+    .piotnetgrid-section__container {
+        height: 100%;
+    }
+  }
+
+  .c-blog-card-img {
+    width: 350px;
+    position: relative;
+    padding: 0 !important;
+    .piotnetgrid-image {
+        height: 100%;
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+  }
+
+  .c-blog-card-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 350px);
+    padding: 20px 40px !important;
+   
+  }
+
+  .c-flex-card {
+    .wp-block-group  {
+        width: 100% !important;
+    }
+  }

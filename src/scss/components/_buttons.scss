@@ -4,24 +4,59 @@
 
 .c-btn-primary {
   display: block;
-  text-align: center;
+
   margin: 1rem 0 1.75rem 0;
 }
 .c-blk-btn a, .c-btn-primary a, .wp-block-button.is-style-standard a.wp-block-button__link, .wp-block-button.is-style-standard .wp-block-button__link {
   background-color: $color-gray;
-  border: none; 
+  border: 1px solid $color-gray;
   color: $color-white;
-  display: inline-block;
-  font-weight: 700;
+  border-radius: 30px;
   line-height: 1;
   text-transform: uppercase;
   padding: 0.75rem 1.25rem;
   transition: $transition-ease;
-  white-space: nowrap;
+  white-space: normal;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
   &:hover {
     background-color: $color-gray-100;
     color: $color-black;
   }
+  svg {
+    margin-left: 10px;
+  }
 }
 
+.c-btn-primary-inverse {
+  a {
+    background-color: $color-gray-100;
+    color: $color-black;
+    &:hover {
+      background-color: $color-gray;
+      color: $color-white;
+    }
+  }
+}
+
+a.piotnetgrid-button {
+  background-color: $color-gray !important;
+  color: $color-white !important;
+  border-radius: 30px !important;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  transition: $transition-ease;
+  white-space: normal;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  border: 1px solid $color-gray !important;
+  &:hover {
+    background-color: $color-gray-100 !important;
+    color: $color-black !important;
+    border: 1px solid $color-gray !important;
+  }
+}
 

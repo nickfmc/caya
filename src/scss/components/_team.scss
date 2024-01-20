@@ -1,0 +1,110 @@
+.c-team-member-bio {
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.c-team-member-bio-img {
+    flex-basis: 50%;
+    background-color: #eee;
+}
+
+.c-team-member-bio-details {
+    flex-basis: 50%;
+    padding: 30px 40px;
+    background-color: #fff;
+    h1 {
+        font-size: clamped(24px, 28px);
+        font-weight: 700;
+        margin-bottom: 2px;
+        span {
+            font-size: clamped(20px, 22px);
+        }
+    }
+    h4 {
+        font-size: clamped(18px, 20px);
+        margin-bottom: 30px;
+    }
+    h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    li {
+        font-size: 15px !important;
+        padding-bottom: 2px !important;
+    }
+    .c-btn-primary {
+        margin-bottom: 0;
+    }
+}
+
+.c-team-hero {
+    height: 450px;
+    background-image: url('../img/Vancouver_Adjusted.jpg');
+    background-size: cover;
+    background-position: 100% 25%;
+}
+
+.c-team-hero + div {
+    position: relative;
+    margin-top: -350px;
+    z-index: 2;
+}
+
+.c-team-bio-full { 
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+}
+
+.gb-shape {
+    overflow: hidden;
+    color: #79857d;
+  left: 0;
+  right: 0;
+  bottom: -1px; 
+  transform: scaleX(-1);
+  display: flex;
+  svg {
+    height: 120px;
+  width: calc(100% + 1.3px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 100%;
+  fill: #79857d;
+  }
+}
+
+.c-team-cta {
+    color: #fff;
+    background-color: #79857d;
+    padding: 50px 0;
+    text-align: center;
+    h2 {
+        color: #fff;
+        font-size: clamped(24px, 28px); 
+    }
+    p {
+        width: 800px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.c-staff-education-item {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 5px;
+        height: 5px;
+        background-color: #79857d;
+        border-radius: 50%;
+    }
+}
