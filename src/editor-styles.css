@@ -3254,7 +3254,7 @@ hr, hr.wp-block-separator {
   clear: both;
   width: 100%;
   border-top: 0;
-  border-color: #333;
+  border-color: #ccc;
   margin: 50px auto;
 }
 

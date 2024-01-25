@@ -1,0 +1,30 @@
+.c-news-card {
+    align-items: center;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #ddd;
+    > div {
+        flex-basis: 50%;
+        flex: 1 1 50%;
+        padding: 20px;
+    }
+    .c-news-card-image {
+        height: 400px;
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+    &:nth-of-type(2n) {
+        flex-direction: row-reverse;
+    
+    }
+    audio {
+        display: block;
+        margin-top: 20px;
+    }
+}

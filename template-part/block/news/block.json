@@ -1,0 +1,16 @@
+{
+    "name": "acf/news-block",
+    "title": "News",
+    "description": "Custom News Block",
+    "icon": "button",
+    "keywords": ["news"],
+    "category": "cayablocks",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "news.php"
+    },
+    "example": { 
+        "attributes": {}
+    },
+    "align": "full"
+}
