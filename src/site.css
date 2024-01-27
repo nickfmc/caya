@@ -5596,6 +5596,86 @@ body.hc-nav-open {
   margin-top: 20px;
 }
 
+.c-workshop-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-workshop-card {
+  width: 100%;
+  padding: 15px;
+}
+
+.c-workshop-card-inner {
+  background-color: #f2f2f2;
+  border: 1px solid #bbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+@media (width >= 788px) {
+  .c-workshop-card-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+}
+
+.c-workshop-card-content {
+  padding: 20px;
+}
+.c-workshop-card-content h6 {
+  margin-bottom: 0;
+}
+
+.c-workshop-card-img {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (width >= 788px) {
+  .c-workshop-card-img {
+    width: 300px;
+    height: 100%;
+  }
+}
+@media (width >= 1100px) {
+  .c-workshop-card-img {
+    width: 506px;
+  }
+}
+.c-workshop-card-img img {
+  position: absolute;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  width: 100%;
+  height: 100%;
+}
+
 /* ==========================================================================
 	 WP GENERATED CONTENT STYLES
 	 ========================================================================== */

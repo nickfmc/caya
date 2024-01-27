@@ -1,0 +1,16 @@
+{
+    "name": "acf/workshop-block",
+    "title": "Workshop Block",
+    "description": "Custom Workshop Block",
+    "icon": "admin-comments",
+    "keywords": ["news"],
+    "category": "cayablocks",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "workshops.php"
+    },
+    "example": { 
+        "attributes": {}
+    },
+    "align": "full"
+}

@@ -38,7 +38,7 @@ function gdt_teammember_reg() {
     'query_var'            => true,
     'menu_position'        => 21,
     'menu_icon'            => 'dashicons-groups',
-    'rewrite'              => false, // or: array( 'slug' => 'custom_type_url/list', 'with_front' => false ),
+    'rewrite'              => array( 'slug' => 'our-team', 'with_front' => false ),
     'capability_type'      => 'post',
     'has_archive'          => false, // true or use custom slug: 'custom_type_url/past' */
     'hierarchical'         => false,
