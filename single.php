@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="o-layout-row">
-  <main class="" role="main" itemscope itemprop="mainContentOfPage" itemtype="https://schema.org/WebPageElement">
+  <main id="main-content" class="" role="main" itemscope itemprop="mainContentOfPage" itemtype="https://schema.org/WebPageElement">
   <section class="editor-content  clearfix">  
     <div class="o-wrapper-wide pt-12">
     <div class="c-single-premeta">

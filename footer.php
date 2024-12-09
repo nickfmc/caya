@@ -1,10 +1,10 @@
   <div class="c-pre-footer">
     <div class="o-wrapper-wide">
     <p><a href="/services/medical-services/">Medical</a> | <a href="/services/counselling-services/">Counselling</a> | <a href="/services/dietitian-services/">Dietitian</a> | <a href="/services/physiotherapy-pelvic-floor/">Pelvic Floor Physiotherapy</a> | <a href="/services/physiotherapy-pelvic-floor/">Physiotherapy</a> | <a href="/services/massage-therapy/">Massage Therapy</a> </p>
-<p class="c-pre-footer-tag">Healthcare for all women, all trans, and all non-binary individuals.</p>
+<p class="c-pre-footer-tag" role="heading" >Healthcare for all women, all trans, and all non-binary individuals.</p>
     </div>
   </div>
-  <footer class="o-section c-page-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+  <footer class="o-section c-page-footer" id="c-page-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
     <div class="c-footer-main">
       <div class="o-wrapper-wide">
       <div class="grid-x">
