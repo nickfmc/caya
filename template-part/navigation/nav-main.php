@@ -1,6 +1,10 @@
 <nav id="site-navigation" class="c-main-navigation" role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 
-  <?php gdt_nav_menu( 'main-menu', 'c-main-menu' ); // Adjust using Menus in WordPress Admin ?>
+<?php 
+   gdt_nav_menu( 'main-menu', 'c-main-menu', array(
+      'walker' => new Accessible_Nav_Walker()
+   )); // Adjust using Menus in WordPress Admin 
+   ?>
   
   <div class="c-social-links" aria-label="Social Media Links">
         <a target="_blank" href="https://www.instagram.com/cayahealthcentre/" 

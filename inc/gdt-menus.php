@@ -18,16 +18,20 @@ register_nav_menus(
 
 
 /* usage: <?php gdt_nav_menu( 'main-menu', 'c-menu-main' ); ?> */
-function gdt_nav_menu( $theme_location, $class )
-{
+function gdt_nav_menu($theme_location, $class, $additional_args = array()) {
   $menu = null;
-  if (has_nav_menu( $theme_location )) {
-    $menu = wp_nav_menu(array(
-      'container' => false,
-      'theme_location' => $theme_location,
-      'menu_class' => $class . '',
-      'echo' => 0,
-    ));
+  if (has_nav_menu($theme_location)) {
+      $default_args = array(
+          'container' => false,
+          'theme_location' => $theme_location,
+          'menu_class' => $class . '',
+          'echo' => 0,
+      );
+      
+      // Merge default args with additional args
+      $args = array_merge($default_args, $additional_args);
+      
+      $menu = wp_nav_menu($args);
   }
   echo $menu;
 }

@@ -1,4 +1,5 @@
-  <div class="c-pre-footer">
+<div class="c-pre-footer" role="navigation" aria-label="Services navigation">
+
     <div class="o-wrapper-wide">
     <p><a href="/services/medical-services/">Medical</a> | <a href="/services/counselling-services/">Counselling</a> | <a href="/services/dietitian-services/">Dietitian</a> | <a href="/services/physiotherapy-pelvic-floor/">Pelvic Floor Physiotherapy</a> | <a href="/services/physiotherapy-pelvic-floor/">Physiotherapy</a> | <a href="/services/massage-therapy/">Massage Therapy</a> </p>
 <p class="c-pre-footer-tag" role="heading" >Healthcare for all women, all trans, and all non-binary individuals.</p>
@@ -8,23 +9,23 @@
     <div class="c-footer-main">
       <div class="o-wrapper-wide">
       <div class="grid-x">
-          <div class="cell  medium-6 large-3 c-footer-cell-one">
+          <div class="cell  medium-6 large-3 c-footer-cell-one" role="complementary" aria-label="Footer Widget Area 1">
             <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
               <?php dynamic_sidebar( 'footer-1' ); ?>
             <?php endif; ?>
           </div> 
-          <div class="cell  medium-6 large-3 c-footer-cell-two">
+          <div class="cell  medium-6 large-3 c-footer-cell-two" role="complementary" aria-label="Footer Widget Area 2">
           <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
             <?php dynamic_sidebar( 'footer-2' ); ?>
           <?php endif; ?>
           </div>
-          <div class="cell  medium-6 large-3">
+          <div class="cell  medium-6 large-3" role="complementary" aria-label="Footer Widget Area 3">
           <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
             <?php dynamic_sidebar( 'footer-3' ); ?>
           <?php endif; ?>
           </div>
 
-          <div class="cell  medium-6 large-3">
+          <div class="cell  medium-6 large-3" role="complementary" aria-label="Footer Widget Area 4">
           <?php if ( is_active_sidebar( 'footer-4' ) ) : ?>
             <?php dynamic_sidebar( 'footer-4' ); ?>
           <?php endif; ?>
@@ -36,7 +37,7 @@
       </div>
       <!-- /.o-wrapper-wide -->
     </div>
-    <div class="c-footer-lower">
+    <div class="c-footer-lower" aria-label="Copyright information">
       <div class="o-wrapper-wide">
       &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
       </div>

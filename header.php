@@ -34,6 +34,16 @@ gtag('set', 'linker', {'domains':['cayahealthcentre.janeapp.com']} );
 </head>
 
 <body <?php body_class(pretty_body_class()); ?> itemscope itemtype="https://schema.org/WebPage">
+
+<!-- Skip links should be the first focusable elements -->
+<div class="skip-links">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#site-navigation" class="skip-link">Skip to main navigation</a>
+    <a href="#c-page-footer" class="skip-link">Skip to page footer</a>
+</div>
+<!-- END Skip links should be the first focusable elements -->
+
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?
 id=GTM-KLVXLBK"

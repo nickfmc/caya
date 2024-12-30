@@ -20,3 +20,34 @@ body {
   overflow-x: clip;
   // padding-top: $page-header-height // match height of header used by headroom.js (if using)
 }
+
+
+
+$focus-color: #dfb6af; 
+
+// Create a placeholder for focus styles
+%focus-outline {
+  outline: 2px solid $focus-color !important;
+  outline-offset: -2px;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+[tabindex]:focus {  // includes any custom tabindex elements
+  @extend %focus-outline;
+}
+
+// High contrast mode support
+@media (forced-colors: active) {
+  a:focus,
+  button:focus,
+  input:focus,
+  textarea:focus,
+  select:focus,
+  [tabindex]:focus {
+    outline: 2px solid SelectedItem !important;
+  }
+}
