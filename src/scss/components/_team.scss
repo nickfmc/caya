@@ -70,7 +70,7 @@
 
 .gb-shape {
     overflow: hidden;
-    color: #79857d;
+    color: $color-green-dark;
   left: 0;
   right: 0;
   bottom: -1px; 
@@ -83,13 +83,13 @@
   left: 50%;
   transform: translateX(-50%);
   min-width: 100%;
-  fill: #79857d;
+  fill: $color-green-dark;
   }
 }
 
 .c-team-cta {
     color: #fff;
-    background-color: #79857d;
+    background-color: $color-green-dark;
     padding: 50px 0;
     text-align: center;
     h2 {

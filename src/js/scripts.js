@@ -193,7 +193,7 @@ jQuery( document ).ready(function( $ ) {
     levelTitles: true,
     position: 'right',
     levelOpen: 'expand',
-    navTitle: $('<div class="c-mobile-menu-header"><a href="/"><img src="'+ templateUrl + '/img/logo.svg"></a></div>'),
+    navTitle: $('<div class="c-mobile-menu-header"><a href="/"><img src="'+ templateUrl + '/img/logo_caya.png"></a></div>'),
     levelTitleAsBack: true
   });
 

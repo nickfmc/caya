@@ -19,6 +19,7 @@
   white-space: normal;
   display: inline-flex;
   align-items: center;
+  text-decoration: none !important;
   font-size: 15px;
   &:hover {
     background-color: $color-gray-100;
@@ -51,6 +52,7 @@ a.piotnetgrid-button {
   white-space: normal;
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
   font-size: 15px;
   border: 1px solid $color-gray !important;
   &:hover {

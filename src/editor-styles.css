@@ -3306,7 +3306,7 @@ input::placeholder, textarea::placeholder {
    A TAG (links) STYLES
    ========================================================================== */
 a {
-  color: #79857d;
+  color: #4B534D;
   text-decoration: none;
   cursor: pointer;
   -webkit-transition: all 250ms ease;
@@ -3359,6 +3359,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none !important;
   font-size: 15px;
 }
 .c-blk-btn a:hover, .c-btn-primary a:hover, .wp-block-button.is-style-standard a.wp-block-button__link:hover, .wp-block-button.is-style-standard .wp-block-button__link:hover {
@@ -3394,6 +3395,7 @@ a.piotnetgrid-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
   font-size: 15px;
   border: 1px solid #646464 !important;
 }
