@@ -4,7 +4,7 @@
 <p class="c-pre-footer-tag" role="heading" >Healthcare for all women, all trans, and all non-binary individuals.</p>
     </div>
   </div>
-  <footer class="o-section c-page-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+  <footer class="o-section c-page-footer" id="c-page-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
     <div class="c-footer-main">
       <div class="o-wrapper-wide">
       <div class="grid-x">
