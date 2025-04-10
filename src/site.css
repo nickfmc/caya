@@ -4421,6 +4421,18 @@ a.piotnetgrid-button:hover {
   display: flex;
   border: 1px solid #ccc;
   min-height: 700px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (width >= 768px) {
+  .c-team-member-bio {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .c-team-member-bio-img {
@@ -4430,11 +4442,15 @@ a.piotnetgrid-button:hover {
   position: relative;
 }
 .c-team-member-bio-img img {
-  position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
   width: 100%;
+}
+@media (width >= 768px) {
+  .c-team-member-bio-img img {
+    position: absolute;
+  }
 }
 
 .c-team-member-bio-details {

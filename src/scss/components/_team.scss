@@ -2,6 +2,10 @@
     display: flex;
     border: 1px solid #ccc;
     min-height: 700px;
+    flex-direction: column;
+    @media(width >= $bp-medium) {
+        flex-direction: row;
+    } 
 }
 
 .c-team-member-bio-img {
@@ -9,10 +13,13 @@
     background-color: #eee;
     position: relative;
     img {
-        position: absolute;
         object-fit: cover;
         height: 100%;
         width: 100%;
+        @media(width >= $bp-medium) {
+            position: absolute;
+        
+        } 
     }
 }
 
